@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.5 on win32)" generated="20210330 14:00:31.791" rpa="false">
+<suite id="s1" name="exploreHabibsApp" source="C:\Users\CJ\Codes\Python\Automação Mobile\tests\exploreHabibsApp.robot">
+<test id="s1-t1" name="Must explore habibs app">
+<kw name="Open Session" library="base2" type="setup">
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20210330 14:00:31.987" endtime="20210330 14:00:31.987"></status>
+</kw>
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=Emulator</arg>
+<arg>app=${EXECDIR}/app/habibs.apk</arg>
+</arguments>
+<status status="PASS" starttime="20210330 14:00:31.987" endtime="20210330 14:00:46.866"></status>
+</kw>
+<status status="PASS" starttime="20210330 14:00:31.987" endtime="20210330 14:00:46.867"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Mais por menos</arg>
+</arguments>
+<status status="PASS" starttime="20210330 14:00:46.867" endtime="20210330 14:01:01.373"></status>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>Mais por menos</arg>
+</arguments>
+<status status="PASS" starttime="20210330 14:01:01.374" endtime="20210330 14:01:07.993"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Escolha 15 itens variados</arg>
+</arguments>
+<status status="PASS" starttime="20210330 14:01:07.993" endtime="20210330 14:01:11.274"></status>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>Escolha 15 itens variados</arg>
+</arguments>
+<status status="PASS" starttime="20210330 14:01:11.275" endtime="20210330 14:01:11.706"></status>
+</kw>
+<status status="PASS" starttime="20210330 14:00:31.987" endtime="20210330 14:01:11.707" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210330 14:00:31.792" endtime="20210330 14:01:11.709"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="exploreHabibsApp">exploreHabibsApp</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

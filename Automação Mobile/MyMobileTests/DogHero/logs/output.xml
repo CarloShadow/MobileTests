@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.5 on win32)" generated="20210403 00:47:08.828" rpa="false">
+<suite id="s1" name="Produtos" source="C:\Users\CJ\Codes\Python\Automação Mobile\MyMobileTests\OLX\tests\Produtos.robot">
+<test id="s1-t1" name="Deve navegar em produtos">
+<kw name="Open Session" library="base" type="setup">
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20210403 00:47:09.044" endtime="20210403 00:47:09.044"></status>
+</kw>
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=Emulator</arg>
+<arg>app=${EXECDIR}/app/doghero.apk</arg>
+</arguments>
+<status status="PASS" starttime="20210403 00:47:09.044" endtime="20210403 00:47:24.399"></status>
+</kw>
+<status status="PASS" starttime="20210403 00:47:09.044" endtime="20210403 00:47:24.399"></status>
+</kw>
+<kw name="Fazer login" library="helpers">
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Português (Brasil)</arg>
+</arguments>
+<status status="PASS" starttime="20210403 00:47:24.401" endtime="20210403 00:47:29.387"></status>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>Português (Brasil)</arg>
+</arguments>
+<status status="PASS" starttime="20210403 00:47:29.387" endtime="20210403 00:47:29.740"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>id=br.com.doghero.astro:id/language_selector_btn_update</arg>
+</arguments>
+<msg timestamp="20210403 00:47:29.741" level="INFO">Clicking element 'id=br.com.doghero.astro:id/language_selector_btn_update'.</msg>
+<status status="PASS" starttime="20210403 00:47:29.741" endtime="20210403 00:47:30.379"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>id=br.com.doghero.astro.onboarding:id/btn_signin</arg>
+</arguments>
+<status status="PASS" starttime="20210403 00:47:30.379" endtime="20210403 00:47:32.276"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>id=br.com.doghero.astro.onboarding:id/btn_signin</arg>
+</arguments>
+<msg timestamp="20210403 00:47:32.277" level="INFO">Clicking element 'id=br.com.doghero.astro.onboarding:id/btn_signin'.</msg>
+<status status="PASS" starttime="20210403 00:47:32.276" endtime="20210403 00:47:32.357"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>id=br.com.doghero.astro:id/signin_email_textview</arg>
+</arguments>
+<status status="PASS" starttime="20210403 00:47:32.357" endtime="20210403 00:47:33.526"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=br.com.doghero.astro:id/signin_email_textview</arg>
+<arg>jenell8028@uorak.com</arg>
+</arguments>
+<msg timestamp="20210403 00:47:33.528" level="INFO">Typing text 'jenell8028@uorak.com' into text field 'id=br.com.doghero.astro:id/signin_email_textview'</msg>
+<status status="PASS" starttime="20210403 00:47:33.526" endtime="20210403 00:47:33.608"></status>
+</kw>
+<kw name="Element Should Contain Text" library="AppiumLibrary">
+<doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>id=br.com.doghero.astro:id/signin_email_textview</arg>
+<arg>jenell8028@uorak.com</arg>
+</arguments>
+<msg timestamp="20210403 00:47:33.609" level="INFO">Verifying element 'id=br.com.doghero.astro:id/signin_email_textview' contains text 'jenell8028@uorak.com'.</msg>
+<status status="PASS" starttime="20210403 00:47:33.608" endtime="20210403 00:47:34.144"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>id=br.com.doghero.astro:id/signin_password_textview</arg>
+</arguments>
+<status status="PASS" starttime="20210403 00:47:34.144" endtime="20210403 00:47:34.196"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=br.com.doghero.astro:id/signin_password_textview</arg>
+<arg>19374682</arg>
+</arguments>
+<msg timestamp="20210403 00:47:34.198" level="INFO">Typing text '19374682' into text field 'id=br.com.doghero.astro:id/signin_password_textview'</msg>
+<status status="PASS" starttime="20210403 00:47:34.197" endtime="20210403 00:47:34.821"></status>
+</kw>
+<kw name="Element Should Contain Text" library="AppiumLibrary">
+<doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>id=br.com.doghero.astro:id/signin_password_textview</arg>
+<arg>••••••••</arg>
+</arguments>
+<msg timestamp="20210403 00:47:34.824" level="INFO">Verifying element 'id=br.com.doghero.astro:id/signin_password_textview' contains text '••••••••'.</msg>
+<status status="PASS" starttime="20210403 00:47:34.821" endtime="20210403 00:47:35.344"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>id=br.com.doghero.astro:id/sign_in_button</arg>
+</arguments>
+<msg timestamp="20210403 00:47:35.345" level="INFO">Clicking element 'id=br.com.doghero.astro:id/sign_in_button'.</msg>
+<status status="PASS" starttime="20210403 00:47:35.344" endtime="20210403 00:47:35.392"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>id=br.com.doghero.astro:id/my_location</arg>
+</arguments>
+<status status="PASS" starttime="20210403 00:47:35.392" endtime="20210403 00:47:38.048"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>id=br.com.doghero.astro:id/my_location</arg>
+</arguments>
+<msg timestamp="20210403 00:47:38.050" level="INFO">Clicking element 'id=br.com.doghero.astro:id/my_location'.</msg>
+<status status="PASS" starttime="20210403 00:47:38.049" endtime="20210403 00:47:38.108"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>id=com.android.packageinstaller:id/permission_allow_button</arg>
+</arguments>
+<status status="PASS" starttime="20210403 00:47:38.108" endtime="20210403 00:47:39.275"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>id=com.android.packageinstaller:id/permission_allow_button</arg>
+</arguments>
+<msg timestamp="20210403 00:47:39.277" level="INFO">Clicking element 'id=com.android.packageinstaller:id/permission_allow_button'.</msg>
+<status status="PASS" starttime="20210403 00:47:39.275" endtime="20210403 00:47:39.336"></status>
+</kw>
+<status status="PASS" starttime="20210403 00:47:24.400" endtime="20210403 00:47:39.336"></status>
+</kw>
+<status status="PASS" starttime="20210403 00:47:09.043" endtime="20210403 00:47:39.337" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210403 00:47:08.830" endtime="20210403 00:47:39.340"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Produtos">Produtos</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
